@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SDR Categories Explained - SDR-Specs.com</title>
+  <meta charset="UTF-8">
+  <style>
+    body { font-family: Arial, Helvetica, sans-serif; background-color: #f0f0f0; margin: 0; padding: 0; }
+    #banner { background-color: #003366; color: white; text-align: center; padding: 15px; }
+    #banner h1 { margin: 0; font-size: 28px; }
+    #banner p { margin: 0; font-size: 14px; font-style: italic; }
+    #container { display: table; width: 100%; border-collapse: collapse; }
+    #nav { display: table-cell; width: 200px; background-color: #cccccc; vertical-align: top; padding: 10px; border-right: 1px solid #999999; }
+    #nav h3 { margin-top: 0; }
+    #nav a.active { font-weight: bold; color: #003366; text-decoration: underline; }
+    #main { display: table-cell; padding: 20px; vertical-align: top; }
+    a { color: #003366; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    table { border-collapse: collapse; width: 100%; background-color: #ffffff; margin-bottom: 20px; }
+    th, td { border: 1px solid #999999; padding: 8px; text-align: left; }
+    th { background-color: #eeeeee; }
+    .note { font-size: 12px; color: #333; }
+  </style>
+</head>
+<body>
+  <div id="banner">
+    <h1>Welcome to SDR-Specs.com</h1>
+    <p>Your one stop resource to software-defined radio specifications.</p>
+  </div>
+
+  <div id="container">
+    <!-- Navigation Column -->
+    <div id="nav">
+      <h3>Navigation</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li>SDR Categories
+          <ul>
+            <li><a href="entry-level.html">Entry-Level SDRs</a></li>
+            <li><a href="mid-tier.html">Mid-Tier SDRs</a></li>
+            <li><a href="professional.html">Professional SDRs</a></li>
+            <li><a href="military.html">Military/Research SDRs</a></li>
+            <li><a href="categories.html" class="active">Categories Explained</a></li>
+          </ul>
+        </li>
+        <li><a href="glossary.html">Glossary</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="#">Intro to SDR (Coming Soon)</a></li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main">
+      <h2>SDR Categories Explained</h2>
+      <p class="note">
+        These definitions are guidelines for organizing radios on SDR-Specs.com. Models can straddle categories based on configuration or use case.
+        Prices are typical street prices (USD) for reference only.
+      </p>
+
+      <h3>Summary at a Glance</h3>
+      <table>
+        <tr>
+          <th>Category</th>
+          <th>Typical Price</th>
+          <th>RX/TX</th>
+          <th>Inst. Bandwidth</th>
+          <th>Typical ADC</th>
+          <th>Example</th>
+        </tr>
+        <tr>
+          <td>Entry-Level</td>
+          <td>$20–$150</td>
+          <td>RX (most)</td>
+          <td>~2–10&nbsp;MHz</td>
+          <td>8–12-bit</td>
+          <td><a href="rtl-sdr-v3.html">RTL-SDR v3</a></td>
+        </tr>
+        <tr>
+          <td>Mid-Tier</td>
+          <td>$150–$500</td>
+          <td>RX or RX/TX</td>
+          <td>~10–20+&nbsp;MHz</td>
+          <td>12–14-bit</td>
+          <td>HackRF One</td>
+        </tr>
+        <tr>
+          <td>Professional</td>
+          <td>$500–$5,000+</td>
+          <td>RX/TX</td>
+          <td>~40–200+&nbsp;MHz</td>
+          <td>14–16-bit</td>
+          <td>Ettus USRP B210</td>
+        </tr>
+        <tr>
+          <td>Military/Research</td>
+          <td>$10,000+</td>
+          <td>RX/TX (multi-channel)</td>
+          <td>~200&nbsp;MHz to GHz+</td>
+          <td>High-end mixed-signal + FPGA</td>
+          <td>Ettus USRP X410</td>
+        </tr>
+      </table>
+
+      <h3>Category Details</h3>
+
+      <h4>Entry-Level SDRs</h4>
+      <ul>
+        <li><strong>Definition:</strong> Low-cost SDRs aimed at beginners, scanning, and general experimentation.</li>
+        <li><strong>Traits:</strong> USB dongle form factor, RX-only (usually), narrower bandwidth, simpler front-ends, bus-powered.</li>
+        <li><strong>Typical Use:</strong> Broadcast/FM/airband/weather sats, trunking, ADS-B (with add-ons), learning DSP.</li>
+        <li><strong>Example:</strong> <a href="rtl-sdr-v3.html">RTL-SDR v3</a>, SDRplay RSP1A, Airspy Mini.</li>
+      </ul>
+
+      <h4>Mid-Tier SDRs</h4>
+      <ul>
+        <li><strong>Definition:</strong> More capable hobbyist/engineering radios; often add TX, better clocks/filters, wider bandwidth.</li>
+        <li><strong>Traits:</strong> 12–14-bit converters, 10–20+ MHz bandwidth, improved shielding and stability.</li>
+        <li><strong>Typical Use:</strong> Protocol exploration, replay/Tx experiments (where legal), better HF/VHF/UHF work.</li>
+        <li><strong>Example:</strong> HackRF One, ADALM-Pluto, Airspy HF+ Discovery.</li>
+      </ul>
+
+      <h4>Professional SDRs</h4>
+      <ul>
+        <li><strong>Definition:</strong> Commercial/engineering-grade radios for development, monitoring, and deployment.</li>
+        <li><strong>Traits:</strong> Higher dynamic range, precise clocks (GPSDO options), robust APIs, enclosure/rack options.</li>
+        <li><strong>Typical Use:</strong> Wireless R&D, spectrum surveys, production test, custom PHY work.</li>
+        <li><strong>Example:</strong> Ettus USRP B200/B210, LimeSDR (upper entry to pro), SDRplay RSPdx (RX-focused).</li>
+      </ul>
+
+      <h4>Military/Research SDRs</h4>
+      <ul>
+        <li><strong>Definition:</strong> High-end, multi-channel, phase-coherent systems for defense, EW, SATCOM, and deep research.</li>
+        <li><strong>Traits:</strong> GHz-class bandwidths, FPGA acceleration, timing/sync (GPSDO/OCXO), ruggedized options.</li>
+        <li><strong>Typical Use:</strong> EW/CUAS, passive/active radar research, multi-antenna arrays, field labs.</li>
+        <li><strong>Example:</strong> Ettus USRP X410, NI/Ettus N320/N321, Per Vices Cyan family.</li>
+      </ul>
+
+      <p class="note">
+        Notes: Bandwidth, dynamic range, and price bands are indicative. Always check each model’s datasheet for exact specs and options.
+      </p>
+    </div>
+  </div>
+</body>
+</html>

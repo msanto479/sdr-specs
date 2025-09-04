@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RTL-SDR v3 - SDR-Specs.com</title>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+    #banner {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+    #banner h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+    #banner p {
+      margin: 0;
+      font-size: 14px;
+      font-style: italic;
+    }
+    #container {
+      display: table;
+      width: 100%;
+      border-collapse: collapse;
+    }
+    #nav {
+      display: table-cell;
+      width: 200px;
+      background-color: #cccccc;
+      vertical-align: top;
+      padding: 10px;
+      border-right: 1px solid #999999;
+    }
+    #nav h3 {
+      margin-top: 0;
+    }
+    #nav a.active {
+      font-weight: bold;
+      color: #003366;
+      text-decoration: underline;
+    }
+    #main {
+      display: table-cell;
+      padding: 20px;
+      vertical-align: top;
+    }
+    a {
+      color: #003366;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      background-color: #ffffff;
+      margin-bottom: 20px;
+    }
+    table th, table td {
+      border: 1px solid #999999;
+      padding: 8px;
+      text-align: left;
+    }
+    table th {
+      background-color: #eeeeee;
+      width: 250px;
+    }
+  </style>
+</head>
+<body>
+  <div id="banner">
+    <h1>Welcome to SDR-Specs.com</h1>
+    <p>Your one stop resource to software-defined radio specifications.</p>
+  </div>
+
+  <div id="container">
+    <!-- Navigation Column -->
+    <div id="nav">
+      <h3>Navigation</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li>SDR Categories
+          <ul>
+            <li><a href="entry-level.html" class="active">Entry-Level SDRs</a></li>
+            <li><a href="mid-tier.html">Mid-Tier SDRs</a></li>
+            <li><a href="professional.html">Professional SDRs</a></li>
+            <li><a href="military.html">Military/Research SDRs</a></li>
+          </ul>
+        </li>
+        <li><a href="glossary.html">Glossary</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="#">Intro to SDR (Coming Soon)</a></li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main">
+      <h2>RTL-SDR v3</h2>
+      <p><em>Specifications based on RTL-SDR.com v4 datasheet, applied here for v3 reference.</em></p>
+
+      <h3>Overview</h3>
+      <p>
+        The RTL-SDR v3 is one of the most widely used entry-level SDRs, based on the RTL2832U chipset.
+        It is popular among hobbyists and beginners for its low cost, wide frequency coverage, and
+        large community support. While it lacks transmit capabilities, it is well-suited for learning
+        about SDR technology, monitoring signals, and experimenting with RF applications.
+      </p>
+
+      <h3>General Information</h3>
+      <table>
+        <tr><th>Debut Date</th><td>2016</td></tr>
+        <tr><th>Still in Production</th><td>Yes</td></tr>
+        <tr><th>Pricing (USD)</th><td>~$30</td></tr>
+        <tr><th>OEM</th><td>RTL-SDR Blog</td></tr>
+        <tr><th>Official Store</th><td><a href="https://www.rtl-sdr.com/buy-rtl-sdr-dvb-t-dongles/" target="_blank">RTL-SDR.com Store</a></td></tr>
+      </table>
+
+      <h3>SDR Characteristics</h3>
+      <table>
+        <tr><th>Tuner Chip</th><td>R828D</td></tr>
+        <tr><th>ADC Chip</th><td>RTL2832U (8-bit)</td></tr>
+        <tr><th>Frequency Range</th><td>500 kHz – 1.766 GHz</td></tr>
+        <tr><th>Bandwidth</th><td>2.56 MHz stable (up to 3.2 MHz with drops)</td></tr>
+        <tr><th>Input Impedance</th><td>50 Ohms</td></tr>
+        <tr><th>Current Draw</th><td>250 – 270 mA</td></tr>
+        <tr><th>HF Reception Method</th><td>Direct sampling with 28.8 MHz LO upconversion</td></tr>
+        <tr><th>Local Oscillator Stability</th><td>1 PPM TCXO</td></tr>
+        <tr><th>Bias Tee</th><td>4.5 V, 180 mA (software switchable)</td></tr>
+        <tr><th>RF Front-End Filtering</th><td>Triplexer with switchable notch filters</td></tr>
+        <tr><th>Transmit Capability</th><td>None (Receive-only)</td></tr>
+      </table>
+
+      <h3>Physical Characteristics</h3>
+      <table>
+        <tr><th>Input Connector</th><td>1 × SMA</td></tr>
+        <tr><th>USB Connector</th><td>USB-A Male</td></tr>
+        <tr><th>Enclosure</th><td>Aluminum with thermal pad for heat dissipation</td></tr>
+        <tr><th>Dimensions</th><td>~60 mm × 27 mm × 17 mm</td></tr>
+        <tr><th>Weight</th><td>~28 g</td></tr>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
